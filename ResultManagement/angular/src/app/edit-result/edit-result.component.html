@@ -1,0 +1,101 @@
+<div class="container-fluid">
+
+  <div class="p-4">
+    <a skipLocationChange routerLink="/home/teacher"> back</a>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+
+      <h3 class="text-center pt-5">Edit Result</h3>
+
+      <div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Success !!</strong> Your data hass been updated successfully.
+        <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <form [formGroup]="editResultForm" (ngSubmit)="collectResult()">
+
+        <div class="form-group">
+
+          <input type="text" class="form-control" id="result_id" formControlName="result_id" [hidden]="true">
+          <label for="rollno">Roll No.</label>
+          <input type="text" class="form-control" id="rollno" formControlName="rollno" placeholder="Enter RollNo" >
+          <div *ngIf="editResultForm.controls['rollno'].touched && editResultForm.controls['rollno'].invalid">
+            <span class="alert-error" *ngIf="editResultForm.controls['rollno'].hasError('required')">
+              *This field is required !!
+            </span>
+            <span class="alert-error" *ngIf="editResultForm.controls['rollno'].hasError('pattern')">
+              *This field can accept numericals only !!
+            </span>
+            <span class="alert-error" *ngIf="editResultForm.controls['rollno'].hasError('max')">
+              *Number Should be less than 1000 !!
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" formControlName="name" placeholder="Enter Name">
+
+          <div *ngIf="editResultForm.controls['name'].touched && editResultForm.controls['name'].invalid">
+            <span class="alert-error" *ngIf="editResultForm.controls['name'].hasError('required')">
+              *This field is required !!
+            </span>
+            <span class="alert-error" *ngIf="editResultForm.controls['name'].hasError('pattern')">
+              *This field can accept alphabetics only !!
+            </span>
+            <span class="alert-error" *ngIf="editResultForm.controls['name'].hasError('minlength')">
+              *Length Should be more than 3 !!
+            </span>
+            <span class="alert-error" *ngIf="editResultForm.controls['name'].hasError('maxlength')">
+              *Length Should be less than 30 !!
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="text" class="form-control" id="dob" formControlName="dob" placeholder="Enter DOB">
+          <div *ngIf="editResultForm.controls['dob'].touched && editResultForm.controls['dob'].invalid">
+            <span class="alert-error" *ngIf="editResultForm.controls['dob'].hasError('required')">
+              *This field is required !!
+            </span>
+            <span class="alert-error" *ngIf="editResultForm.controls['dob'].hasError('pattern')">
+              *Invalid date (format:'DD-MM-YYYY') !!
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="score">Score</label>
+          <input type="text" class="form-control" id="score" formControlName="score" placeholder="Enter Score">
+          <div *ngIf="editResultForm.controls['score'].touched && editResultForm.controls['score'].invalid">
+            <span class="alert-error" *ngIf="editResultForm.controls['score'].hasError('required')">
+              *This field is required !!
+            </span>
+            <span class="alert-error" *ngIf="editResultForm.controls['score'].hasError('pattern')">
+              *This field can accept numericals only !!
+            </span>
+            <span class="alert-error" *ngIf="editResultForm.controls['score'].hasError('max')">
+              *Number Should be less than 100 !!
+            </span>
+          </div>
+        </div>
+
+        <div class="row pt-3">
+          <div class="col text-end">
+            <button [disabled]="editResultForm.invalid" type="submit" class="btn btn-primary">Submit</button>
+          </div>
+          <div class="col">
+            <button type="button" (click)="clearForm()" class="btn btn-primary">Clear</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>

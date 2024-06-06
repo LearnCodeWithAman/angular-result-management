@@ -1,0 +1,147 @@
+{
+  "result": [
+    {
+      "rollno": 1,
+      "name": "Aman Verma",
+      "dob": "22-05-1993",
+      "score": 85,
+      "id": "f28c"
+    },
+    {
+      "rollno": 2,
+      "name": "Vivek Singh",
+      "dob": "21-02-1993",
+      "score": 66,
+      "id": "f28b"
+    },
+    {
+      "rollno": 3,
+      "name": "Shashank Mathur",
+      "dob": "20-09-1994",
+      "score": 87,
+      "id": "8d29"
+    },
+    {
+      "rollno": 4,
+      "name": "Akshay Bhasin",
+      "dob": "15-08-1993",
+      "score": 88,
+      "id": "8123"
+    },
+    {
+      "id": "bac9",
+      "rollno": 5,
+      "name": "Anjali Gupta",
+      "dob": "21-07-1995",
+      "score": "63"
+    },
+    {
+      "result_id": "74b1",
+      "rollno": "6",
+      "name": "Ankita Sharma",
+      "dob": "30-02-1919",
+      "score": "23",
+      "id": "74b1"
+    },
+    {
+      "rollno": "7",
+      "name": "avciabai",
+      "dob": "00-00-0000",
+      "score": "02",
+      "id": "0804"
+    },
+    {
+      "result_id": "4c6a",
+      "rollno": "8",
+      "name": "aiciyi",
+      "dob": "99-99-9900",
+      "score": "9",
+      "id": "4c6a"
+    },
+    {
+      "id": "534b",
+      "rollno": "9",
+      "name": "ehygfisbc",
+      "dob": "88-88-8888",
+      "score": "8"
+    },
+    {
+      "id": "8270",
+      "rollno": "10",
+      "name": "rdbvdsibsb",
+      "dob": "77-77-7777",
+      "score": "73"
+    },
+    {
+      "id": "4164",
+      "rollno": "11",
+      "name": "dciydvibso",
+      "dob": "66-66-6666",
+      "score": "66"
+    },
+    {
+      "id": "554a",
+      "rollno": "12",
+      "name": "iyacihabdcoai",
+      "dob": "55-32-4696",
+      "score": "11"
+    },
+    {
+      "id": "0303",
+      "rollno": "13",
+      "name": "csabihcbiha",
+      "dob": "27-11-2333",
+      "score": "01"
+    },
+    {
+      "id": "7ef0",
+      "rollno": "14",
+      "name": "a iygaicaba",
+      "dob": "12-12-1212",
+      "score": "12"
+    },
+    {
+      "id": "4411",
+      "rollno": "15",
+      "name": "dbbsan",
+      "dob": "3393qq0",
+      "score": "3"
+    },
+    {
+      "id": "4741",
+      "rollno": "16",
+      "name": "dicybs",
+      "dob": "93yheui",
+      "score": "3"
+    },
+    {
+      "id": "3f2d",
+      "rollno": "17",
+      "name": "abchabl",
+      "dob": "hahbiaia",
+      "score": "83"
+    },
+    {
+      "id": "ce07",
+      "rollno": 22,
+      "name": "Aman V",
+      "dob": "22051993",
+      "score": "69"
+    },
+    {
+      "result_id": "30ff",
+      "rollno": "63",
+      "name": "Aman mohini",
+      "dob": "78-21-9998",
+      "score": "95",
+      "id": "30ff"
+    },
+    {
+      "id": "7461",
+      "rollno": "666",
+      "name": "dkbhb",
+      "dob": "30-01-1992",
+      "score": "100"
+    }
+  ]
+}
